@@ -1,0 +1,30 @@
+<?php $number = rand(1, 1000000000);?>
+<script src="<?php echo Google_Visualization::APISCRIPT; ?>"></script>
+<script>
+var cObj<?php echo $number;?> = <?php echo $configObject;?>;
+function draw<?php echo $number;?>() {
+var dataObj = <?php echo $dataObject->getData()?>;
+var data = new google.visualization.DataTable(dataObj, 0.5);
+var eStr = 'new '+cObj<?php echo $number;?>.provider+'.'+cObj<?php echo $number;?>.scope+'.'+cObj<?php echo $number;?>.type+'(document.getElementById("'+cObj<?php echo $number;?>.port+'<?php echo $number;?>"))';
+visualization = eval(eStr);
+
+<?php
+  if($formatObject):
+	  echo $formatObject;
+  endif;
+?>
+
+<?php if($dataViewObject):
+	echo $dataViewObject;
+?>
+visualization.draw(<?php echo $dataViewObject->getViewTable()?>, cObj<?php echo $number;?>.props);
+<?php else: ?>
+visualization.draw(<?php echo $this->getDataTable()?>, cObj<?php echo $number;?>.props);
+<?php endif; ?>
+}
+
+google.load(cObj<?php echo $number;?>.scope, cObj<?php echo $number;?>.version,{'packages': [cObj<?php echo $number;?>.type.toLowerCase()], 'language':cObj<?php echo $number;?>.language});
+google.setOnLoadCallback(draw<?php echo $number;?>);
+</script>
+
+<div id="chart<?php echo  $number;?>" style="display: inline-block;width:100% !important;height:200px!important"></div>

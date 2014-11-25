@@ -1,0 +1,313 @@
+/*
+    Template Name: Round
+*/
+
+#buttoncontainer {
+    width:70px;
+    height:70px;
+    z-index:9999;
+    position:fixed;
+    right:-38px;
+    top:139px;
+}
+
+.csstransforms .cirq-wrapper {
+    font-size:12px;
+    width: 325px;
+    height: 325px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9998;
+    top:25px;
+    right:-158px;
+    border-radius: 50%;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    transform: scale(0.1);
+    pointer-events: none;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+
+.csstransforms .opened-nav {
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.cirq-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 2;
+}
+
+.cirq-overlay.on-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cirq-button {
+    border: none;
+    background: none;
+    font-family: Arial;
+    color: #f06060;
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: #cdcdcd;
+    padding-top:15px;
+    padding-left:2px;
+    padding-right:3px;
+    -webkit-transform: rotate(-90deg) scale(1);
+    -ms-transform: rotate(-90deg) scale(1);
+    -moz-transform: rotate(-90deg) scale(1);
+    transform: rotate(-90deg) scale(1);
+    border-radius:50%;
+    cursor: pointer;
+    z-index: 9999;
+
+}
+
+.cirq-button span {margin-top:-30px;}
+
+.cirq-button:hover,
+.cirq-button:active,
+.cirq-button:focus {
+    color: #aa1010;
+}
+
+.cirq-wrapper ul {margin: 0; list-style: none;
+    position: relative}
+
+.csstransforms .cirq-wrapper li {
+    position: absolute;
+    font-size: 1.5em;
+    width: 10em;
+    height: 10em;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.3em;
+    margin-left: -10em;
+    -webkit-transition: border .3s ease;
+    -moz-transition: border .3s ease;
+    transition: border .3s ease;
+}
+
+.csstransforms .cirq-wrapper li a {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.18em;
+    height: 14.5em;
+    width: 14.5em;
+    position: absolute;
+    bottom: -7.25em;
+    right: -7.25em;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 1.8em;
+    text-align: center;
+    -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+    -ms-transform: skew(-50deg) rotate(-70deg) scale(1) ;
+    -moz-transform: skew(-50deg) rotate(-70deg) scale(1) ;
+    transform: skew(-50deg) rotate(-70deg) scale(1);
+    -webkit-backface-visibility: hidden;
+    /*-webkit-transition: opacity 0.3s, color 0.3s;
+    /-moz-transition: opacity 0.3s, color 0.3s;
+    transition: opacity 0.3s, color 0.3s;*/
+    -webkit-transform-style: preserve-3d;
+
+}
+
+.csstransforms .cirq-wrapper li a span {
+
+}
+
+/* for a central angle x, the list items must be skewed by 90-x degrees
+in our case x=40deg so skew angle is 50deg
+items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
+
+.csstransforms .cirq-wrapper li:first-child {
+    -webkit-transform: rotate(58deg) skew(50deg);
+    -ms-transform: rotate(58deg) skew(50deg);
+    -moz-transform: rotate(58deg) skew(50deg);
+    transform: rotate(58deg) skew(50deg);
+
+}
+
+.csstransforms .cirq-wrapper li:nth-child(2) {
+    -webkit-transform: rotate(19deg) skew(50deg);
+    -ms-transform: rotate(19deg) skew(50deg);
+    -moz-transform: rotate(19deg) skew(50deg);
+    transform: rotate(19deg) skew(50deg);
+}
+
+.csstransforms .cirq-wrapper li:nth-child(3) {
+    -webkit-transform: rotate(-20deg) skew(50deg);
+    -ms-transform: rotate(-20deg) skew(50deg);
+    -moz-transform: rotate(-20deg) skew(50deg);
+    transform: rotate(-20deg) skew(50deg);
+}
+
+.csstransforms .cirq-wrapper li:nth-child(4) {
+    -webkit-transform: rotate(-59deg) skew(50deg);
+    -ms-transform: rotate(-59deg) skew(50deg);
+    -moz-transform: rotate(-59deg) skew(50deg);
+    transform: rotate(-59deg) skew(50deg);
+}
+
+.csstransforms .cirq-wrapper li:nth-child(5) {
+    -webkit-transform: rotate(-98.5deg) skew(50deg);
+    -ms-transform: rotate(-98.5deg) skew(50deg);
+    -moz-transform: rotate(-98.5deg) skew(50deg);
+    transform: rotate(-98.5deg) skew(50deg);
+}
+
+.csstransforms .cirq-wrapper li:nth-child(5) a {
+
+}
+
+
+/* active style */
+.csstransforms .cirq-wrapper li.active a {
+    background-color: #000;
+}
+
+
+/* hover style */
+.csstransforms .cirq-wrapper li:not(.active) a:hover,
+.csstransforms .cirq-wrapper li:not(.active) a:active,
+.csstransforms .cirq-wrapper li:not(.active) a:focus {
+  /*  background-color: sandybrown;*/
+    opacity:0.5 !important;
+}
+
+/* fallback */
+.no-csstransforms .cirq-button {
+    display: none;
+}
+
+.no-csstransforms .cirq-wrapper li {
+    position: static;
+    float: left;
+    font-size: 1em;
+    height: 5em;
+    width: 5em;
+    background-color: #eee;
+    text-align: center;
+    line-height: 5em;
+}
+
+.no-csstransforms .cirq-wrapper li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.3em;
+    border-right: 1px solid #ddd;
+}
+
+.no-csstransforms .cirq-wrapper li a:last-child {
+    border: none;
+}
+
+.no-csstransforms .cirq-wrapper li a:hover,
+.no-csstransforms .cirq-wrapper li a:active,
+.no-csstransforms .cirq-wrapper li a:focus {
+    background-color: white;
+}
+
+.no-csstransforms .cirq-wrapper li.active a {
+    background-color: #6F325C;
+    color: #fff;
+}
+
+.no-csstransforms .cirq-wrapper {
+    font-size: 1em;
+    height: 5em;
+    width: 25.15em;
+    bottom: 0;
+    margin-left: -12.5em;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    border: 1px solid #ddd;
+}
+
+@media screen and (max-width:480px) {
+    .csstransforms .cirq-wrapper {
+        font-size: .68em;
+    }
+
+    .cirq-button {
+        font-size: 1em;
+    }
+
+    .csstransforms .cirq-wrapper li {
+        font-size: 1.52em;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .no-csstransforms .cirq-wrapper {
+        width: 15.15px;
+        margin-left: -7.5em;
+    }
+
+    .no-csstransforms .cirq-wrapper li {
+        height: 3em;
+        width: 3em;
+    }
+}
+.cirq-button {background:#557b8c;}
+.cirq-button:hover,
+.cirq-button:active,
+.cirq-button:focus {background:#7c7c7c;}
+
+.csstransforms .cirq-wrapper li:nth-child(1) a {background:#4E1DA4 ;}
+.csstransforms .cirq-wrapper li:nth-child(1) a:hover {opacity:0.5}
+.csstransforms .cirq-wrapper li:nth-child(2) a {background:#4099FF;}
+.csstransforms .cirq-wrapper li:nth-child(2) a:hover {opacity:0.5}
+.csstransforms .cirq-wrapper li:nth-child(3) a {background:#d34836;}
+.csstransforms .cirq-wrapper li:nth-child(3) a:hover {opacity:0.5}
+.csstransforms .cirq-wrapper li:nth-child(4) a {background:#3DADFC;}
+.csstransforms .cirq-wrapper li:nth-child(4) a:hover {opacity:0.5}
+.csstransforms .cirq-wrapper li:nth-child(5) a {background:#C92228;}
+.csstransforms .cirq-wrapper li:nth-child(5) a:hover {opacity:0.5}
+
+/*.csstransforms .cirq-wrapper li:nth-child(1) a {background:#4E1DA4 ;}
+.csstransforms .cirq-wrapper li:nth-child(1) a:hover {background:#4c66a4;}
+.csstransforms .cirq-wrapper li:nth-child(2) a {background:#4099FF;}
+.csstransforms .cirq-wrapper li:nth-child(2) a:hover {background:#a5c6c6;}
+.csstransforms .cirq-wrapper li:nth-child(3) a {background:#d34836;}
+.csstransforms .cirq-wrapper li:nth-child(3) a:hover {background:#e54836;}
+.csstransforms .cirq-wrapper li:nth-child(4) a {background:#3DADFC;}
+.csstransforms .cirq-wrapper li:nth-child(4) a:hover {background:#38A2CA;}
+.csstransforms .cirq-wrapper li:nth-child(5) a {background:#C92228;}
+.csstransforms .cirq-wrapper li:nth-child(5) a:hover {background:#e8c8b7;}*/

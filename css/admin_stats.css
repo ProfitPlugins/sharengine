@@ -1,0 +1,309 @@
+
+#se_reports
+{
+    min-height: 350px;
+}
+.module {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 padding-box #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    color: #666666;
+    display: inline-block;
+    margin: 15px 10px;
+    min-height: 330px;
+    position: relative;
+    vertical-align: top;
+    width: 380px;
+}
+
+.module.wide {
+    width: 780px;
+}
+
+.module-header {
+    border-bottom: 1px solid #C9C9C9;
+    cursor: move;
+    height: 42px;
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #F8F8F8 50%, #F4F4F4 50%, #F0F0F0 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 5px 5px 0 0;
+    font-family: "ProximaNova-Bold";
+    font-weight: normal;
+}
+.module.wide .module-title {
+    display: inline-block;
+    width: 700px;
+}
+.module .module-title {
+    display: inline-block;
+    width: 298px;
+}
+.module-title {
+    font-family: "ProximaNova-Regular";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 6px 10px 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.sparkline-content {
+    height: 132px;
+    padding: 0 0 10px 10px;
+    position: relative;
+}
+
+
+.sparkline-divider {
+    border-bottom: 1px solid #C9C9C9;
+    height: 0;
+}
+.sparkline-chart {
+    display: inline-block;
+    height: 130px;
+    vertical-align: top;
+    width: 200px;
+}
+.sparkline-data-wrapper {
+    bottom: 20px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.sparkline-data {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.sparkline-data-count {
+    font-family: "ProximaNova-Bold";
+    font-size: 40px;
+    font-weight: normal;
+}
+.module-table {
+    border-collapse: separate;
+    border-style: hidden;
+    font-family: "ProximaNova-Regular";
+    font-size: 12px;
+    font-weight: normal;
+    width: 100%;
+}
+.striped:nth-child(2n+1) {
+    background-color: #F7F7F7;
+}
+.module-table-text {
+    border-bottom: 1px solid #C9C9C9 !important;
+    border-left: 1px solid #FDFDFD;
+    border-right: 1px solid #C9C9C9;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+.module-table-text:last-child {
+    border-right: medium none;
+}
+.module-table-value {
+    font-family: "ProximaNova-Semibold";
+    font-weight: normal;
+    height: 58px;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+}
+.module-table-header-wrapper {
+    background: linear-gradient(to bottom, #F3F3F3 0%, #F3F3F3 50%, #EAEAEA 50%, #EAEAEA 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 18px;
+}
+.module a {
+    color: #1479B7;
+    text-decoration: none;
+}
+.module table {
+   /* border-collapse: collapse;*/
+    border-spacing: 0;
+}
+.module {
+    color: #666666;
+}
+.module-table-icon {
+    margin-right: 10px;
+    max-height: 24px;
+    max-width: 24px;
+    vertical-align: middle;
+}
+.module-table-text .text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ .report-date-controls {
+    float: right;
+     width:765px;
+}
+.report-date-controls .tab-bar-wrapper {
+    margin: 0 10px 0 0;
+}
+.iblock {
+    display: inline-block;
+    vertical-align: top;
+
+}
+.iblock a {
+    color: #666666;
+    font-family: "ProximaNova-Regular";
+    font-weight: normal;
+    line-height: 1.4;
+    text-rendering: optimizelegibility;
+    text-decoration:none;
+}
+.tab-bar {
+    cursor: pointer;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+}
+.tab-bar .grey:first-child {
+    border-left: 1px solid #B1B1B1;
+}
+.tab-bar .tab-element:first-child {
+    background-clip: padding-box;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-left: 1px;
+}
+.tab-bar .date-range-select {
+    height: auto;
+    width: auto;
+}
+.tab-bar .grey {
+    background: linear-gradient(to bottom, #EEEDED 0%, #DEDEDE 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #BBBBBB;
+    border-right: 1px solid #B1B1B1;
+    border-top: 1px solid #AAAAAA;
+    color: #454545;
+}
+.tab-bar .tab-element {
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    float: left;
+    font-family: "ProximaNova-Semibold";
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    transition: background-color 0.3s ease-in-out 0s;
+
+}
+.tab-bar .date-range-select .tab-link {
+    display: block;
+    margin: 6px 16px;
+}
+.datepicker {
+    display: inline;
+    position: relative;
+    width: 183px;
+}
+.date_range img {
+    margin: 0 8px;
+}
+.datepicker input {
+    background-color: #FFFFFF;
+    background-image: url("../images/calendar_icon.png");
+    background-position: 105px 8px;
+    background-repeat: no-repeat;
+    border: 1px solid #AAAAAD;
+    border-radius: 5px;
+    color: #666666;
+    cursor: pointer;
+    font-family: 'ProximaNovaA-Regular';
+    font-size: 15px;
+    height: 33px;
+    padding: 5px 20px 5px 10px;
+    width: 131px;
+}
+.tab-element a {
+    outline:0;
+}
+.tab-bar .grey.active {
+    box-shadow: 0 1px 0 #F5F5F5, 0 4px 15px rgba(0, 0, 0, 0.5) inset;
+}
+.tab-bar .tab-element.active {
+    border-left: medium none;
+    border-right: medium none;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.module-paginate-bar {
+    background-clip: padding-box;
+    border-radius: 0 6px 6px 0;
+    bottom: 6px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+}
+.module-paginate-element {
+    background: linear-gradient(to bottom, #EDEDED 0%, #CBCBCB 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    box-shadow: 0 0 1px #CBCBCB inset;
+    float: right;
+    height: 8px;
+    margin: 5px;
+    width: 8px;
+    cursor:pointer;
+}
+.module-paginate-element.active {
+    background: linear-gradient(to bottom, #8EBCE3 0%, #428BCA 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px #216197 inset;
+    cursor:default;
+}
+
+.inline-title
+{
+    display:inline;
+}
+
+/*#ui-datepicker-div
+{
+    display:none;
+}*/
+
+.ui-datepicker td span, .ui-datepicker td a
+{
+    text-align:center !important;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight
+{
+    height:19px!important;
+}
+
+/* Click to Stats */
+
+.click-to-header {
+    cursor:pointer;
+
+}
+.click-to-module{
+    min-height:0;
+    word-wrap:break-word;
+
+}
+.click-to-content{
+    /*display:none;*/
+    min-height:100px;
+    padding:10px;
+}
+.module-title .tm-tag {
+    height:28px;
+    line-height:20px;
+}
+.se-click-to-show{
+    display:none;
+
+}

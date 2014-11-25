@@ -1,0 +1,2 @@
+<?php
+    include "integrations.php";
